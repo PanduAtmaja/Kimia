@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Massa Atom Rata-rata</title>
+  <link rel="stylesheet" href="../style/style.css" />
+</head>
+<body>
+  <div class="teori-atom-container">
+    <h1>Massa Atom Rata-rata</h1>
+
+    <section>
+      <p>
+        Massa atom rata-rata adalah rata-rata massa isotop-isotop dari suatu unsur dengan mempertimbangkan kelimpahannya.
+      </p>
+      <p>
+        Rumus: <strong>Massa Atom Rata-rata = (massa₁ × %kelimpahan₁) + (massa₂ × %kelimpahan₂) + ...</strong>
+      </p>
+    </section>
+
+    <section>
+      <h2>🔢 Kalkulator Massa Atom Rata-rata</h2>
+      <div>
+        <label>Jumlah Isotop: </label>
+        <input type="number" id="jumlahIsotop" min="1" max="5" />
+        <button onclick="generateInput()">Buat Input</button>
+      </div>
+      <form id="inputForm"></form>
+      <button onclick="hitungMassaAtom()">Hitung</button>
+      <p id="hasilMassa"></p>
+    </section>
+
+    <a href="../index.html" class="back-button">⬅ Kembali ke Beranda</a>
+  </div>
+
+  <script src="../Script/massa-atom.js"></script>
+</body>
+</html>

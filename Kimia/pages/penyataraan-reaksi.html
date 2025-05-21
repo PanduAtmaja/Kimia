@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Penyetaraan Reaksi Kimia</title>
+  <link rel="stylesheet" href="../style/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background-color: var(--background-color, #fff);
+      color: var(--text-color, #000);
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s ease;
+    }
+    input:focus, button:hover {
+      border-color: var(--primary-color, #007bff);
+      outline: none;
+      cursor: pointer;
+    }
+    #hasilSetaraan {
+      margin-top: 20px;
+      font-weight: bold;
+      white-space: pre-wrap;
+      background: var(--secondary-background, #f9f9f9);
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      min-height: 50px;
+    }
+    .back-button {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: var(--primary-color, #007bff);
+      font-weight: 600;
+    }
+    .back-button:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Penyetaraan Reaksi Kimia</h1>
+  <p>Masukkan reaksi kimia yang ingin disetarakan (contoh: H2 + O2 -> H2O)</p>
+  <input type="text" id="reaksiInput" placeholder="Contoh: H2 + O2 -> H2O" />
+  <button id="btnSetarakan">Setarakan</button>
+
+  <div id="hasilSetaraan"></div>
+
+  <a href="../index.html" class="back-button">⬅ Kembali ke Beranda</a>
+
+  <script src="../Script/penyetaraan-reaksi.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Penamaan 2 Unsur</title>
+  <link rel="stylesheet" href="../style/style.css" />
+</head>
+<body>
+  <div class="teori-atom-container">
+    <h1>Penamaan Senyawa 2 Unsur</h1>
+
+    <section>
+      <p>Senyawa biner terbentuk dari dua unsur, biasanya logam dan non-logam, atau dua non-logam.</p>
+      <ul>
+        <li>Logam + Non-logam: Nama logam + akar nama non-logam + akhiran <strong>"-ida"</strong></li>
+        <li>Non-logam + Non-logam: Menggunakan awalan Yunani (mono-, di-, tri-, dll)</li>
+      </ul>
+      <p><strong>Contoh:</strong> NaCl → Natrium klorida, CO<sub>2</sub> → Karbon dioksida</p>
+    </section>
+
+    <section>
+      <h2>🧪 Penamaan Otomatis</h2>
+      <div>
+        <label>Unsur 1:</label>
+        <input type="text" id="unsur1" placeholder="Contoh: Na" />
+        <label>Unsur 2:</label>
+        <input type="text" id="unsur2" placeholder="Contoh: Cl" />
+        <button onclick="namaSenyawa()">Tentukan Nama</button>
+      </div>
+      <p id="hasilPenamaan"></p>
+    </section>
+
+    <a href="../index.html" class="back-button">⬅ Kembali ke Beranda</a>
+  </div>
+
+  <script src="../Script/penamaan-unsur.js"></script>
+</body>
+</html>

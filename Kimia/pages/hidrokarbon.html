@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Penentu Jenis Hidrokarbon</title>
+  <link rel="stylesheet" href="../style/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Penentu Jenis Hidrokarbon</h1>
+
+    <label for="jumlahC">Jumlah Atom Karbon (C):</label>
+    <input type="number" id="jumlahC" min="1" />
+
+    <label for="gugusFungsi">Gugus Fungsi (opsional):</label>
+    <select id="gugusFungsi">
+      <option value="">- Tidak ada -</option>
+      <option value="alkana">Alkana</option>
+      <option value="alkena">Alkena</option>
+      <option value="alkuna">Alkuna</option>
+      <option value="alkohol">Alkohol</option>
+      <option value="eter">Eter</option>
+      <option value="asam-karboksilat">Asam Karboksilat</option>
+    </select>
+
+    <button onclick="cekHidrokarbon()">Cek Senyawa</button>
+
+    <div id="hasil" class="hasil-output"></div>
+
+    <a href="../index.html" class="back-button">⬅ Kembali ke Beranda</a>
+  </div>
+
+  <script src="../Script/hidrokarbon.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laju Reaksi – Kimia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .output {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #f3f3f3;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+ <h1>Analisis Orde Reaksi dari Data Tabel</h1>
+
+<p>Masukkan data percobaan di bawah ini:</p>
+
+<table id="data-table" border="1" cellpadding="10">
+  <thead>
+    <tr>
+      <th>Percobaan</th>
+      <th>[A] (mol/L)</th>
+      <th>[B] (mol/L)</th>
+      <th>Laju Reaksi (mol/L·s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><input type="number" step="any" /></td>
+      <td><input type="number" step="any" /></td>
+      <td><input type="number" step="any" /></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><input type="number" step="any" /></td>
+      <td><input type="number" step="any" /></td>
+      <td><input type="number" step="any" /></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><input type="number" step="any" /></td>
+      <td><input type="number" step="any" /></td>
+      <td><input type="number" step="any" /></td>
+    </tr>
+  </tbody>
+</table>
+
+  </tbody>
+</table>
+<br>
+<button onclick="tambahBaris()">Tambah Baris</button>
+
+<br>
+<button onclick="hitungOrdeReaksi()">Hitung Orde Reaksi</button>
+
+<div class="output" id="hasil-analisis"></div>
+
+<section>
+ <a href="../index.html" class="back-button">⬅ Kembali ke Beranda</a>
+</section>
+
+  <script src="../Script/laju-reaksi.js"></script>
+</body>
+</html>

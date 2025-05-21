@@ -1,0 +1,204 @@
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode a {
+  background-color: #333;
+  color: #fff;
+}
+
+#searchInput {
+  padding: 8px;
+  margin-bottom: 12px;
+  width: 60%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#toggleDarkMode {
+  margin: 12px;
+  padding: 8px 16px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#toggleDarkMode:hover {
+  background-color: #222;
+}
+
+
+.teori-atom-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.model-atom {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+  display: block;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+  margin: 0;
+}
+
+section h2 {
+  color: #0056b3;
+  margin-top: 0;
+}
+
+.atom-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+@media (max-width: 768px) {
+  .teori-atom-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+}
+
+
+form div {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 6px;
+  margin-left: 5px;
+  width: 60px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+
+.button-container a {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 10px 15px;
+  background-color: var(--primary-color, #007bff);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.button-container a:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* === Gaya Antar Molekul === */
+
+.gaya-antar-molekul-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.gaya-antar-molekul-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.gaya-antar-molekul-container section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-left: 5px solid #28a745;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.gaya-antar-molekul-container h2 {
+  color: #006400;
+  font-size: 20px;
+}
+
+#tipeMolekul {
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#cekGayaBtn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#cekGayaBtn:hover {
+  background-color: #218838;
+}
+
+#hasilGaya {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #2c3e50;
+}

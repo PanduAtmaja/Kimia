@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Stokiometri</title>
+  <script src="../Script/stokiometri.js"></script>
+  <style>
+    .output { margin-top: 20px; font-weight: bold; }
+    label { display: block; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Perhitungan Stokiometri</h2>
+
+  <label>Massa (gram): <input type="number" id="massa" step="any"></label>
+  <label>Mr (massa molar): <input type="number" id="mr" step="any"></label>
+  <button onclick="hitungMol()">Hitung Mol</button>
+
+  <label>Mol: <input type="number" id="mol" step="any"></label>
+  <button onclick="hitungMassa()">Hitung Massa</button>
+
+  <label>Jumlah Partikel: <input type="number" id="jumlah-partikel" step="any"></label>
+  <button onclick="hitungMolDariPartikel()">Hitung Mol dari Partikel</button>
+
+  <label>Volume Gas (L, STP): <input type="number" id="volume-gas" step="any"></label>
+  <button onclick="hitungMolDariVolume()">Hitung Mol dari Volume</button>
+
+  <label>Mol Pereaksi: <input type="number" id="mol-pereaksi" step="any"></label>
+  <label>Koefisien Pereaksi: <input type="number" id="koef-pereaksi" step="any"></label>
+  <label>Koefisien Produk: <input type="number" id="koef-produk" step="any"></label>
+  <button onclick="hitungMolProduk()">Hitung Mol Produk</button>
+
+  <div class="output" id="hasil-stokiometri"></div>
+  <section>
+   <a href="../index.html" class="back-button">⬅ Kembali ke Beranda</a>
+</section>
+</body>
+</html>

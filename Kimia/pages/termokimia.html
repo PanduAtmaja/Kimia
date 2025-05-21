@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Termokimia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+
+    input, button {
+      padding: 8px;
+      margin: 5px;
+    }
+
+    .reaksi-item {
+      margin-bottom: 10px;
+    }
+
+    .reaksi-item button {
+      margin-left: 5px;
+    }
+
+    #totalDeltaH {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simulasi Termokimia</h1>
+
+  <div>
+    <h2>Tambahkan Reaksi</h2>
+    <input type="text" id="persamaan" placeholder="Contoh: H₂ + ½O₂ ⇌ H₂O" style="width: 300px;">
+    <input type="number" id="deltaH" placeholder="ΔH (kJ/mol)">
+    <button onclick="tambahReaksi()">Tambah Reaksi</button>
+    <button onclick="contohPembakaran()">Contoh Pembakaran</button>
+  </div>
+
+  <hr>
+
+  <div id="reaksiList"></div>
+  <p id="totalDeltaH"></p>
+  <p id="penjelasan"></p>
+
+  <hr>
+
+  <h2>Jawab Soal</h2>
+  <input type="text" id="soal-input" placeholder="Tulis soal termokimia di sini" style="width: 300px;">
+  <button onclick="jawabSoal()">Jawab</button>
+  <div id="jawaban-soal"></div>
+  <section>
+    <a href="../index.html" class="back-button">⬅ Kembali ke Beranda</a>
+  </section>
+  <script src="../Script/termokimia.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Molaritas, Molalitas & Konsentrasi %</title>
+  <link rel="stylesheet" href="../style/style.css" />
+</head>
+<body>
+  <h1>Hitung Molaritas, Molalitas & Konsentrasi %</h1>
+
+  <div class="container">
+    <label for="mol">Jumlah mol (n) dalam mol:</label>
+    <input type="number" id="mol" placeholder="Masukkan jumlah mol" step="any" />
+
+    <label for="volume">Volume larutan (V) dalam liter:</label>
+    <input type="number" id="volume" placeholder="Masukkan volume larutan (liter)" step="any" />
+
+    <label for="massaPelarut">Massa pelarut (kg):</label>
+    <input type="number" id="massaPelarut" placeholder="Masukkan massa pelarut (kg)" step="any" />
+
+    <label for="massaZat">Massa zat terlarut (g):</label>
+    <input type="number" id="massaZat" placeholder="Masukkan massa zat terlarut (gram)" step="any" />
+
+    <button id="hitungBtn">Hitung</button>
+
+    <div id="hasil" class="hasil-kalkulasi"></div>
+  </div>
+
+  <a href="../index.html" class="back-button">⬅ Kembali ke Beranda</a>
+
+  <script src="../Script/molaritas-konsentrasi.js"></script>
+</body>
+</html>

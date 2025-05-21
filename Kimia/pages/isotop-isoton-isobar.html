@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Isotop, Isoton, Isobar</title>
+  <link rel="stylesheet" href="../style/style.css" />
+</head>
+<body>
+  <div class="teori-atom-container">
+    <h1>Isotop, Isoton, dan Isobar</h1>
+
+    <section>
+      <h2>1. Isotop</h2>
+      <p>Isotop adalah atom-atom dari unsur yang sama dengan jumlah proton yang sama, tetapi jumlah neutron yang berbeda.</p>
+      <p><strong>Contoh:</strong> <sup>12</sup>C, <sup>13</sup>C, dan <sup>14</sup>C</p>
+    </section>
+
+    <section>
+      <h2>2. Isoton</h2>
+      <p>Isoton adalah atom-atom dari unsur yang berbeda dengan jumlah neutron yang sama.</p>
+      <p><strong>Contoh:</strong> <sup>14</sup>C dan <sup>15</sup>N (keduanya memiliki 8 neutron)</p>
+    </section>
+
+    <section>
+      <h2>3. Isobar</h2>
+      <p>Isobar adalah atom-atom dari unsur berbeda dengan jumlah massa atom (A) yang sama.</p>
+      <p><strong>Contoh:</strong> <sup>40</sup>Ar dan <sup>40</sup>K</p>
+    </section>
+  <h2>🔍 Cek Hubungan Atom (Isotop, Isoton, Isobar)</h2>
+  <p>Masukkan data dua atom untuk mengecek apakah mereka merupakan isotop, isoton, atau isobar.</p>
+  <form id="atomForm">
+    <div>
+      <label>Atom 1 - Nomor Atom (Z):</label>
+      <input type="number" id="z1" required />
+    </div>
+    <div>
+      <label>Atom 1 - Nomor Massa (A):</label>
+      <input type="number" id="a1" required />
+    </div>
+    <br/>
+    <div>
+      <label>Atom 2 - Nomor Atom (Z):</label>
+      <input type="number" id="z2" required />
+    </div>
+    <div>
+      <label>Atom 2 - Nomor Massa (A):</label>
+      <input type="number" id="a2" required />
+    </div>
+    <br/>
+    <button type="submit">🔍 Cek Hubungan</button>
+  </form>
+
+  <div id="hasil" style="margin-top: 20px; font-weight: bold;"></div>
+</section>
+
+<!-- Panggil file JS -->
+<script src="../Script/isotop-isoton-isobar.js"></script>
+
+    <a href="../index.html" class="back-button">⬅ Kembali ke Beranda</a>
+  </div>
+</body>
+</html>
